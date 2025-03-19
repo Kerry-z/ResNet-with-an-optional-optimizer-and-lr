@@ -1,0 +1,16 @@
+# Checkpoints and models
+checkpoint*/
+*.pth
+*.pt
+
+# Dataset folder
+dataset/
+data/
+
+# Logs
+logs/
+*.log
+
+# Python cache
+__pycache__/
+*.pyc

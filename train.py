@@ -7,6 +7,7 @@ import options
 
 def train(opt):
     print(opt)
+    os.makedirs(opt.checkpoint_dir, exist_ok=True)
     with open(os.path.join(opt.checkpoint_dir, 'loss_log.txt'), 'a') as f:
         f.write(str(opt) + '\n')
     dataloader = data.get_dataloader(True, opt.batch, opt.dataset_dir)

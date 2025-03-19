@@ -21,6 +21,10 @@ def parse_args_train():
     parser.add_argument('--decay_lr_2', help='iteration at which lr decays 2nd', type=int, default=48000)
     parser.add_argument('--lr_decay_rate', help='lr *= lr_decay_rate at decay_lr_i-th iteration', type=float, default=0.1)
     parser.add_argument('--n_iter', help='learning iterations', type=int, default=64000)
+
+    parser.add_argument('--optimizer', choices=['sgd', 'momentum', 'adam'], default='momentum',
+                    help='Optimizer type: sgd (plain), momentum (default), adam')
+    
     args = parser.parse_args()
 
     return args
