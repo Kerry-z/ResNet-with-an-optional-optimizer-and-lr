@@ -1,7 +1,6 @@
-# 激活 Conda 环境（可选）
 # conda activate your_env
 
-$python = "python"  # 直接用 python，假设已在环境里
+$python = "python"  
 
 $depth = 3
 $n_iter = 64000

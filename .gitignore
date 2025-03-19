@@ -8,8 +8,8 @@ dataset/
 data/
 
 # Logs
-logs/
-*.log
+# logs/
+# *.log
 
 # Python cache
 __pycache__/
